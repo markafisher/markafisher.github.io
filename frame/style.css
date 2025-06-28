@@ -1,0 +1,98 @@
+html, body, .grid-container { 
+    height: 100%; 
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    /*background: url("images/02.jpg") no-repeat center center fixed; */
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . clock . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." "daycast daycast . . temp";
+}
+
+.clock { 
+	grid-area: clock;
+    width: 250px; 
+    height: 100px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 5em;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10%;
+    padding-right: 5px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.temp { 
+  width: 100px;
+  height: 95px;
+	grid-area: temp;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  bottom: 0;
+  float: right;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 95px;
+  vertical-align: middle;
+}
+
+.daycast { 
+	grid-area: daycast;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.threeHourIcon{
+  text-align: center;
+}
+.threeHourTime{
+  text-align: center;
+  font-size: 1.5em;
+
+}
+.threeHourWeather{
+  width: 80px;
+  float: left;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
